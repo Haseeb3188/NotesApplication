@@ -1,0 +1,22 @@
+.keep-c-toggle-view {
+	width: 80%;
+	margin-left: 80%;
+	cursor: pointer;
+}
+
+.keep-c-toggle-log {
+	width: 80%;
+	margin-left: 5%;
+	cursor: pointer;
+}
+.menu-spacer{
+	display: inline;
+	padding: 10vh;
+}
+.mat-toolbar-row{
+	width:75%;
+}
+
+ a:hover{
+	color:black;
+ }

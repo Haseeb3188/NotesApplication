@@ -1,0 +1,23 @@
+.mat-button,.mat-input{
+    background-color: blue;
+    color: white;
+    width: 30vh;
+}
+
+.keep-c-note-button-container{
+    height:8vh;
+    display: block;
+    margin-top: 3vh;
+    margin-left: 95vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.keep-c-note-search-container{
+    padding-left:5vh;
+    padding-bottom:5vh;
+    height:5vh;
+    align-self: center;
+    align-items: center;
+}

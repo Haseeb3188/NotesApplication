@@ -1,0 +1,41 @@
+.mat-button,.mat-input{
+    background-color: blue;
+    color: white;
+    width: 30vh;
+}
+
+.mat-button:disabled{
+    background-color:gray !important;
+    color:black;
+}
+
+.keep-c-note-button-container{
+    height:8vh;
+    display: block;
+    margin-top: 3vh;
+    margin-left: 95vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.keep-c-note-search-container{
+    float: right;
+    margin-top:-10vh;
+    padding-right:10vh;
+    padding-bottom:5vh;
+    height:5vh;
+    align-self: center;
+    align-items: center;
+}
+.register-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+.mat-input-element
+{
+    caret-color:red ! important;
+}

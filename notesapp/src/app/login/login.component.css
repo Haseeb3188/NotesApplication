@@ -1,0 +1,29 @@
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.login-container >*{
+    width: 50%;
+}
+
+.register-container >*{
+    justify-content: center;
+    width: 70%;
+}
+
+.register-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+.mat-button{
+    background-color: blue;
+    color: white;
+    width: 40vh;
+}

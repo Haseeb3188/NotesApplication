@@ -1,0 +1,26 @@
+<mat-toolbar color="primary">
+    <span>Keep</span>
+  </mat-toolbar>
+<!-- Label to display any error messages -->
+<strong *ngIf="registerMessage" class="error-message">{{registerMessage}}</strong>
+<div class="login-container">
+    <div>
+        <h2>Register</h2>
+      </div>
+  <mat-form-field>
+    <input matInput class="username" placeholder="Enter your User Name" [formControl]="username" required>
+    <mat-error *ngIf="username.invalid">{{getUsernameErrorMessage()}}</mat-error>
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput class="password" placeholder="Enter your Password" type="password" [formControl]="password" required>
+    <mat-error *ngIf="password.invalid">{{getPasswordErrorMessage()}}</mat-error>
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput class="email" placeholder="Enter your Email" [formControl]="email" email="true" required>
+    <mat-error *ngIf="email.invalid">{{getEmailErrorMessage()}}</mat-error>
+  </mat-form-field>
+  <button mat-button type="button" (click)='registerSubmit()' class="mat-button">Register</button>
+  <br/>
+  <button  mat-button type="button" (click)='goToLogin()' class="mat-button">Login</button>
+</div>
+

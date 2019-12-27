@@ -1,0 +1,21 @@
+<mat-toolbar color="primary">
+<mat-toolbar-row class="mat-toolbar-row">
+	<h1>Keep</h1>
+	<span class="menu-spacer"></span>
+	 <div *ngIf="isUserLoggedIn">
+			<a *ngIf="isUserLoggedIn" mat-button (click)='goToDashboard()'>Home</a>
+			<a *ngIf="isUserLoggedIn" mat-button (click)='goToUpload()'>Upload Notes</a>
+	</div> 
+		<div class="keep-c-toggle-view">
+				<i *ngIf="isNoteView" class="material-icons switchToListView" (click)='switchToListView()'>view_list</i>
+				<i *ngIf="!isNoteView" class="material-icons switchToNoteView" (click)='switchToNoteView()'>view_quilt</i>
+			</div>
+			<div class="keep-c-toggle-log">
+				<i *ngIf="isUserLoggedIn" class="material-icons exit_to_app" (click)='logout()'>exit_to_app</i>
+				<i *ngIf="!isUserLoggedIn" class="material-icons power_settings_new" (click)='goToLogin()'>power_settings_new</i>
+			</div>
+</mat-toolbar-row>
+	
+</mat-toolbar>
+
+

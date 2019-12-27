@@ -1,0 +1,7 @@
+
+<app-header></app-header>
+<div class="keep-c-note-search-container">
+  <input style="display: none" type="file" (change)="onFileChanged($event)" #fileInput>
+  <button class="mat-button" (click)="fileInput.click()">Select notes to Upload</button>
+  <button class="mat-button" (click)="onUpload()">Upload!</button>
+</div>

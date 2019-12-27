@@ -1,0 +1,10 @@
+.keep-c-list-container{
+    display: flex;
+    flex-direction: column;
+    width: 70vh;
+    align-items: center;
+}
+
+.keep-c-list-container.level{
+    display: flex;
+}

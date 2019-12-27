@@ -1,0 +1,22 @@
+<div class="keep-c-note-search-container">
+<mat-form-field>
+       <input matInput [(ngModel)]="searchKey" (input)="search()" class="scrhnotes" placeholder="Search notes by title" name="Search">
+</mat-form-field>
+<!-- <input style="display: none" type="file" (change)="onFileChanged($event)" #fileInput>
+<button class="mat-button" (click)="fileInput.click()">Select notes to Upload</button>
+<button class="mat-button" (click)="onUpload()">Upload!</button> -->
+</div>
+<div class="keep-c-note-container">  
+	<!-- Include the notes collection with each note rendered as a separate NoteComponent -->
+    <app-note [note]='note' *ngFor='let note of notes'></app-note>	
+</div>
+<div class="keep-c-note-button-container">
+    <button mat-button (click)="addToFavourite()">Save changes</button>    
+    <button mat-button (click)="deleteSelected()">Delete Selected</button> 
+</div>
+
+<div class="keep-c-note-register-container">
+    <input matInput [formControl]="receiverEmail" email='true' placeholder="Email of the receipent" name="email">
+    <mat-error *ngIf="receiverEmail.invalid">{{getEmailErrorMessage()}}</mat-error>
+    <button mat-button [disabled]="receiverEmail.invalid" (click)="shareSelected()">Share Selected</button>    
+</div>

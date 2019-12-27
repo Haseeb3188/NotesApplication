@@ -1,0 +1,18 @@
+<mat-card>
+  <i class="material-icons delete_forever" style="cursor: pointer;" (click)='deleteNote();'>delete_forever</i>
+  <mat-checkbox matInput name="select" [(ngModel)]="note.mark" >Select</mat-checkbox>
+<mat-card class="mat-card-inner" (click)='openEditView()'>
+    <mat-card-title>{{note.title}}</mat-card-title>
+    <mat-card-content>{{note.text}},        Group: {{note.group}}</mat-card-content>
+      
+</mat-card>
+<mat-card-content>Add this note to group:
+<mat-select name="group" (change)="markChanges()" placeholder="Group note" [(ngModel)]="note.group">
+  <mat-option *ngFor="let group of groups" [value]="group">
+    {{ group }}
+  </mat-option>
+</mat-select></mat-card-content>
+    <mat-checkbox matInput name="favourite" (click)="markChanges()" [(ngModel)]="note.favourite" >Select to mark favourite</mat-checkbox>
+</mat-card>
+
+

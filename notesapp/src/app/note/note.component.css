@@ -1,0 +1,14 @@
+.mat-card{
+    width: 400px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: bisque;
+}
+
+.mat-card-inner{
+    width: 250px;
+    margin: auto;
+    margin-top: 20px;
+    background-color:beige;
+}
+
